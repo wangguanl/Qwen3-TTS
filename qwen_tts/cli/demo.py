@@ -603,7 +603,7 @@ def main(argv=None) -> int:
     ckpt = _resolve_checkpoint(args)
 
     dtype = _dtype_from_str(args.dtype)
-    attn_impl = "flash_attention_2" if args.flash_attn else None
+    attn_impl = "flash_attention_2" if args.flash_attn else "sdpa"
 
     tts = Qwen3TTSModel.from_pretrained(
         ckpt,
