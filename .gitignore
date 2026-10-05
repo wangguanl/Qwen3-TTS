@@ -22,3 +22,6 @@ wheels/
 .vscode/
 venv/
 env/
+# --- local runtime: models / caches / artifacts (not versioned) ---
+qwen3_tts_sdpa_output.wav
+qwen3_tts_verify_output.wav
